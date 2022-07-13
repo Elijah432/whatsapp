@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script> 
+   
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+     <style>
+        .row div{
+            height: 300px;
+            margin-right: 10px;
+            margin-bottom: 20px;
+        }
+     </style>
+<body class="bg-dark">
+    <!-- <p class="bg-danger">lorem</p>
+    <p class="bg-primary">lorem</p>
+    <p class="bg-secondary">lorem</p>
+    <p class="bg-success">lorem</p>
+    <p class="bg-warning">lorem</p>
+    <p class="bg-info">lorem</p>
+
+    <p class="text-danger">lorem</p>
+    <p class="text-primary">lorem</p>
+    <p class="text-secondary">lorem</p>
+    <p class="text-success">lorem</p>
+    <p class="text-warning">lorem</p>
+    <p class="text-info">lorem</p>
+    
+    <div class="row">
+        <div class="col-lg-3 col-md-3 bg-danger"></div>
+        <div class="col-lg-3 col-md-3 bg-danger"></div>
+        <div class="col-lg-3 col-md-3 bg-danger"></div>
+    </div>
+
+    <p class="text-danger text-md-center text-lg-left bg-warning w-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Incidunt rem assumenda expedita dolor, veniam ipsa dicta. Reprehenderit autem libero qui numquam quis? 
+        Voluptatibus laborum iusto repellat quod distinctio natus quos!
+    </p>
+    <p class="text-danger text-md-center text-lg-left bg-white shadow-lg w-50">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+        Incidunt rem assumenda expedita dolor, veniam ipsa dicta. Reprehenderit autem libero qui numquam quis? 
+        Voluptatibus laborum iusto repellat quod distinctio natus quos!
+    </p>
+    <button class="btn btn-danger btn-lg w-10">Samuel</button>
+    <button class="btn btn-primary">Elijah</button>
+    <button class="btn btn-dark">Kenny</button> -->
+
+    <!-- <h4>collapse</h4>
+<div id="holder">
+    <div>
+        <button data-toggle="collapse" data-target="#lorem">click to see</button>
+        <p id="lorem" class="collapse">lorem see</p>
+    </div>
+    <div>
+        <button data-toggle="collapse" data-target="#lorem2">click to see</button>
+        <p id="lorem2" class="collapse">lorem see</p>
+    </div>
+</div> -->
+<!-- <div class="d-flex justify">
+    <div class="w-25 mb-3 h-25 bg-danger shadow-sm" style="height: 25vh! important;"></div>
+    <div class="w-50 mb-3 h-25 bg-danger shadow-sm" style="height: 25vh !important;"></div>
+</div> -->
+<div class="d-flex mb-4 mt-3 justify-content-between">
+    <div class="text-white pl-3"> <b>Whatsapp</b></div>
+    <div class="d-flex justify-content-around" style="width: 15%;">
+    <div class="text-white"><i class="fa fa-search" ></i></div>
+    <div class=" text-white"><i class="fa fa-ellipsis-v"></i></div>
+    </div>
+</div>
+<ul class="nav nav-tabs justify-content-between bg-dark" role="tablist" style="position: sticky; top:0%;">
+    <li class="nav-item">
+        <a class="nav-link text-gray "data-toggle="tab" href="#camera"><i class="fa fa-camera"></i></a>
+      </li>
+    <li class="nav-item">
+      <a class="nav-link active text-success d-flex"data-toggle="tab" href="#chat"><b>CHAT</b><div style="background-color: green; color: black; display:flex; align-items:center; justify-content: center; border-radius: 100%; width: 30px; height: 30px; margin-left:20px;">36</div></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link  text-success" data-toggle="tab" href="#menu1"> <b>STATUS</b></a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link text-success" data-toggle="tab" href="#menu2"><b>CALLS</b></a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content text-white">
+    <div id="camera" class="container tab-pane fade"><br>
+        
+      </div>
+    
+    <div id="chat" class="container tab-pane active"><br>
+    <div><i class="fa-solid fa-message position-fixed bg-success d-flex align-items-center justify-content-center" style="font-size: 20px; width: 50px; height: 50px; border-radius: 100%; bottom: 2%; right: 9%;"></i></div>
+    <div class="d-flex justify-content-between">
+      <div class="d-flex">
+      <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+      <div class="ml-3">
+        <div>CHAMPIONS OF THE WORLD</div>
+        <div class="text-gray ">+234 818 575 2356: <i class="fa fa-video"></i> Video</div>
+      </div>
+      </div>
+      <div>
+        <div class="text-success">5:39pm</div>
+        <div style="background-color: green; display:flex; align-items:center; justify-content: center; border-radius: 100%; width: 25px; height: 25px; margin-left:20px;">6</div>
+      </div>
+    </div>  
+    <br>
+    <div class="d-flex justify-content-between">
+      <div class="d-flex">
+      <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+      <div class="ml-3">
+        <div>CHAMPIONS OF THE WORLD</div>
+        <div class="text-gray ">+234 818 575 2356: <i class="fa fa-video"></i> Video</div>
+      </div>
+      </div>
+      <div>
+        <div class="text-success">5:39pm</div>
+        <div style="background-color: green; display:flex; align-items:center; justify-content: center; border-radius: 100%; width: 25px; height: 25px; margin-left:20px;">6</div>
+      </div>
+    </div> 
+    <br>
+    <div class="d-flex justify-content-between">
+      <div class="d-flex">
+      <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+      <div class="ml-3">
+        <div>CHAMPIONS OF THE WORLD</div>
+        <div class="text-gray ">+234 818 575 2356: <i class="fa fa-video"></i> Video</div>
+      </div>
+      </div>
+      <div>
+        <div class="text-success">5:39pm</div>
+        <div style="background-color: green; display:flex; align-items:center; justify-content: center; border-radius: 100%; width: 25px; height: 25px; margin-left:20px;">6</div>
+      </div>
+    </div> 
+    <br>
+    <div class="d-flex justify-content-between">
+      <div class="d-flex">
+      <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+      <div class="ml-3">
+        <div>CHAMPIONS OF THE WORLD</div>
+        <div class="text-gray ">+234 818 575 2356: <i class="fa fa-video"></i> Video</div>
+      </div>
+      </div>
+      <div>
+        <div class="text-success">5:39pm</div>
+        <div style="background-color: green; display:flex; align-items:center; justify-content: center; border-radius: 100%; width: 25px; height: 25px; margin-left:20px;">6</div>
+      </div>
+    </div> 
+    <br>
+    <div class="d-flex justify-content-between">
+      <div class="d-flex">
+      <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+      <div class="ml-3">
+        <div>CHAMPIONS OF THE WORLD</div>
+        <div class="text-gray ">+234 818 575 2356: <i class="fa fa-video"></i> Video</div>
+      </div>
+      </div>
+      <div>
+        <div class="text-success">5:39pm</div>
+        <div style="background-color: green; display:flex; align-items:center; justify-content: center; border-radius: 100%; width: 25px; height: 25px; margin-left:20px;">6</div>
+      </div>
+    </div> 
+    <br>
+    <div class="d-flex justify-content-between">
+      <div class="d-flex">
+      <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+      <div class="ml-3">
+        <div>CHAMPIONS OF THE WORLD</div>
+        <div class="text-gray ">+234 818 575 2356: <i class="fa fa-video"></i> Video</div>
+      </div>
+      </div>
+      <div>
+        <div class="text-success">5:39pm</div>
+        <div style="background-color: green; display:flex; align-items:center; justify-content: center; border-radius: 100%; width: 25px; height: 25px; margin-left:20px;">6</div>
+      </div>
+    </div> 
+    <br>
+    <div class="d-flex justify-content-between">
+      <div class="d-flex">
+      <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+      <div class="ml-3">
+        <div>CHAMPIONS OF THE WORLD</div>
+        <div class="text-gray ">+234 818 575 2356: <i class="fa fa-video"></i> Video</div>
+      </div>
+      </div>
+      <div>
+        <div class="text-success">5:39pm</div>
+        <div style="background-color: green; display:flex; align-items:center; justify-content: center; border-radius: 100%; width: 25px; height: 25px; margin-left:20px;">6</div>
+      </div>
+    </div> 
+    <br>
+    <div class="d-flex justify-content-between">
+      <div class="d-flex">
+      <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+      <div class="ml-3">
+        <div>CHAMPIONS OF THE WORLD</div>
+        <div class="text-gray ">+234 818 575 2356: <i class="fa fa-video"></i> Video</div>
+      </div>
+      </div>
+      <div>
+        <div class="text-success">5:39pm</div>
+        <div style="background-color: green; display:flex; align-items:center; justify-content: center; border-radius: 100%; width: 25px; height: 25px; margin-left:20px;">6</div>
+      </div>
+    </div> 
+    <br>
+    <div class="d-flex justify-content-between">
+      <div class="d-flex">
+      <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+      <div class="ml-3">
+        <div>CHAMPIONS OF THE WORLD</div>
+        <div class="text-gray ">+234 818 575 2356: <i class="fa fa-video"></i> Video</div>
+      </div>
+      </div>
+      <div>
+        <div class="text-success">5:39pm</div>
+        <div style="background-color: green; display:flex; align-items:center; justify-content: center; border-radius: 100%; width: 25px; height: 25px; margin-left:20px;">6</div>
+      </div>
+    </div> 
+    <br>
+    <div class="d-flex justify-content-between">
+      <div class="d-flex">
+      <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+      <div class="ml-3">
+        <div>CHAMPIONS OF THE WORLD</div>
+        <div class="text-gray ">+234 818 575 2356: <i class="fa fa-video"></i> Video</div>
+      </div>
+      </div>
+      <div>
+        <div class="text-success">5:39pm</div>
+        <div style="background-color: green; display:flex; align-items:center; justify-content: center; border-radius: 100%; width: 25px; height: 25px; margin-left:20px;">6</div>
+      </div>
+    </div> 
+    <br>
+    <div class="d-flex justify-content-between">
+      <div class="d-flex">
+      <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+      <div class="ml-3">
+        <div>CHAMPIONS OF THE WORLD</div>
+        <div class="text-gray ">+234 818 575 2356: <i class="fa fa-video"></i> Video</div>
+      </div>
+      </div>
+      <div>
+        <div class="text-success">5:39pm</div>
+        <div style="background-color: green; display:flex; align-items:center; justify-content: center; border-radius: 100%; width: 25px; height: 25px; margin-left:20px;">6</div>
+      </div>
+    </div> 
+    <br>
+    <div class="d-flex justify-content-between">
+      <div class="d-flex">
+      <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+      <div class="ml-3">
+        <div>CHAMPIONS OF THE WORLD</div>
+        <div class="text-gray ">+234 818 575 2356: <i class="fa fa-video"></i> Video</div>
+      </div>
+      </div>
+      <div>
+        <div class="text-success">5:39pm</div>
+        <div style="background-color: green; display:flex; align-items:center; justify-content: center; border-radius: 100%; width: 25px; height: 25px; margin-left:20px;">6</div>
+      </div>
+    </div> 
+    <br>
+    <div class="d-flex justify-content-between">
+      <div class="d-flex">
+      <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+      <div class="ml-3">
+        <div>CHAMPIONS OF THE WORLD</div>
+        <div class="text-gray ">+234 818 575 2356: <i class="fa fa-video"></i> Video</div>
+      </div>
+      </div>
+      <div>
+        <div class="text-success">5:39pm</div>
+        <div style="background-color: green; display:flex; align-items:center; justify-content: center; border-radius: 100%; width: 25px; height: 25px; margin-left:20px;">6</div>
+      </div>
+    </div> 
+    </div>
+    <div id="menu1" class="container tab-pane fade"><br>
+      <div><i class="fa-solid fa-pencil position-fixed d-flex align-items-center justify-content-center" style="font-size: 20px; width: 50px; height: 50px; border-radius: 100%; bottom: 17%; right: 4%; background-color: rgb(109, 106, 106);"></i></div>
+      <div><i class="fa-solid fa-camera position-fixed bg-success d-flex align-items-center justify-content-center" style="font-size: 20px; width: 50px; height: 50px; border-radius: 100%; bottom: 2%; right: 4%;"></i></div>
+    <div class="d-flex">
+      <img src="./Image/IMG_20211128_215844_190.jpg" class="rounded-circle" alt="" width="50px" height="50">
+      <div style="margin-top: -20px;"><i class="fa-solid fa-circle-plus mt-5" style="margin-left:-18px;  color: green; border: 3px solid black; border-radius: 100%;"></i></div>
+      
+      <div style="margin-left: 15px;">
+        <div>My status</div>
+        <div class="text-gray">Tap to add status update</div>
+      </div>
+    </div>
+    <div class="mt-3">Recent update</div>
+    <div class="d-flex">
+      <img src="./Image/IMG_20211128_215844_190.jpg" class="rounded-circle mt-2" alt="" width="60px" height="60" style="border: 5px dashed green;">
+    <div class="pt-3 pl-3">
+      <div>Dotun</div>
+      <div class="text-gray">3 minute ago</div>
+    </div>
+    </div>
+    <div class="d-flex">
+      <img src="./Image/IMG_20211128_215844_190.jpg" class="rounded-circle mt-2" alt="" width="60px" height="60" style="border: 5px dashed green;">
+    <div class="pt-3 pl-3">
+      <div>Dotun</div>
+      <div class="text-gray">3 minute ago</div>
+    </div>
+    </div>
+    <div class="d-flex">
+      <img src="./Image/IMG_20211128_215844_190.jpg" class="rounded-circle mt-2" alt="" width="60px" height="60" style="border: 5px dashed green;">
+    <div class="pt-3 pl-3">
+      <div>Dotun</div>
+      <div class="text-gray">3 minute ago</div>
+    </div>
+    </div>
+    <div class="d-flex">
+      <img src="./Image/IMG_20211128_215844_190.jpg" class="rounded-circle mt-2" alt="" width="60px" height="60" style="border: 5px dashed green;">
+    <div class="pt-3 pl-3">
+      <div>Dotun</div>
+      <div class="text-gray">3 minute ago</div>
+    </div>
+    </div>
+    <div class="d-flex">
+      <img src="./Image/IMG_20211128_215844_190.jpg" class="rounded-circle mt-2" alt="" width="60px" height="60" style="border: 5px dashed green;">
+    <div class="pt-3 pl-3">
+      <div>Dotun</div>
+      <div class="text-gray">3 minute ago</div>
+    </div>
+    </div>
+    <div class="d-flex">
+      <img src="./Image/IMG_20211128_215844_190.jpg" class="rounded-circle mt-2" alt="" width="60px" height="60" style="border: 5px dashed green;">
+    <div class="pt-3 pl-3">
+      <div>Dotun</div>
+      <div class="text-gray">3 minute ago</div>
+    </div>
+    </div>
+    <div class="d-flex">
+      <img src="./Image/IMG_20211128_215844_190.jpg" class="rounded-circle mt-2" alt="" width="60px" height="60" style="border: 5px dashed green;">
+    <div class="pt-3 pl-3">
+      <div>Dotun</div>
+      <div class="text-gray">3 minute ago</div>
+    </div>
+    </div>
+    <div class="mt-3">Viewed update</div>
+    <div class="d-flex">
+      <img src="./Image/IMG_20211128_215844_190.jpg" class="rounded-circle mt-2" alt="" width="60px" height="60" style="border: 3px dashed white;">
+    <div class="pt-3 pl-3">
+      <div>Dotun</div>
+      <div class="text-gray">3 minute ago</div>
+    </div>
+    </div>
+    <div class="d-flex">
+      <img src="./Image/IMG_20211128_215844_190.jpg" class="rounded-circle mt-2" alt="" width="60px" height="60" style="border: 3px dashed white;">
+    <div class="pt-3 pl-3">
+      <div>Dotun</div>
+      <div class="text-gray">3 minute ago</div>
+    </div>
+    </div>
+    <div class="d-flex">
+      <img src="./Image/IMG_20211128_215844_190.jpg" class="rounded-circle mt-2" alt="" width="60px" height="60" style="border: 3px dashed white;">
+    <div class="pt-3 pl-3">
+      <div>Dotun</div>
+      <div class="text-gray">3 minute ago</div>
+    </div>
+    </div>
+    <div class="d-flex">
+      <img src="./Image/IMG_20211128_215844_190.jpg" class="rounded-circle mt-2" alt="" width="60px" height="60" style="border: 3px dashed white;">
+    <div class="pt-3 pl-3">
+      <div>Dotun</div>
+      <div class="text-gray">3 minute ago</div>
+    </div>
+    </div>
+    <div class="d-flex">
+      <img src="./Image/IMG_20211128_215844_190.jpg" class="rounded-circle mt-2" alt="" width="60px" height="60" style="border: 3px dashed white;">
+    <div class="pt-3 pl-3">
+      <div>Dotun</div>
+      <div class="text-gray">3 minute ago</div>
+    </div>
+    </div>
+    </div>
+    <div id="menu2" class="container tab-pane fade"><br>
+      <div><i class="fa-solid fa-phone position-fixed bg-success d-flex align-items-center justify-content-center" style="font-size: 20px; width: 50px; height: 50px; border-radius: 100%; bottom: 2%; right: 8%;"></i></div>
+      <div class="d-flex justify-content-between">
+      <div class="d-flex">
+        <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+        <div style="margin-left: 10px ;">
+          <div>CODING SCHOOL</div>
+          <div><i class="fa-solid fa-arrow-left pr-2 text-success"></i> 59 minutes ago</div>
+        </div>
+      </div>
+        <div >
+          <div><i class="fa-solid fa-phone text-success" style="font-size: 20px;margin-left: 100px; margin-top: 10px;"></i></div>
+        </div>
+      </div>
+      <br>
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+          <div style="margin-left: 10px ;">
+            <div>CODING SCHOOL</div>
+            <div><i class="fa-solid fa-arrow-left pr-2 text-success"></i> 59 minutes ago</div>
+          </div>
+        </div>
+          <div >
+            <div><i class="fa-solid fa-phone text-success" style="font-size: 20px;margin-left: 100px; margin-top: 10px;"></i></div>
+          </div>
+        </div>
+      <br>
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+          <div style="margin-left: 10px ;">
+            <div>CODING SCHOOL</div>
+            <div><i class="fa-solid fa-arrow-left pr-2 text-success"></i> 59 minutes ago</div>
+          </div>
+        </div>
+          <div >
+            <div><i class="fa-solid fa-phone text-success" style="font-size: 20px;margin-left: 100px; margin-top: 10px;"></i></div>
+          </div>
+        </div>
+      <br>
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+          <div style="margin-left: 10px ;">
+            <div>CODING SCHOOL</div>
+            <div><i class="fa-solid fa-arrow-left pr-2 text-success"></i> 59 minutes ago</div>
+          </div>
+        </div>
+          <div >
+            <div><i class="fa-solid fa-phone text-success" style="font-size: 20px;margin-left: 100px; margin-top: 10px;"></i></div>
+          </div>
+        </div>
+      <br>
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+          <div style="margin-left: 10px ;">
+            <div>CODING SCHOOL</div>
+            <div><i class="fa-solid fa-arrow-left pr-2 text-success"></i> 59 minutes ago</div>
+          </div>
+        </div>
+          <div >
+            <div><i class="fa-solid fa-phone text-success" style="font-size: 20px;margin-left: 100px; margin-top: 10px;"></i></div>
+          </div>
+        </div>
+      <br>
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+          <div style="margin-left: 10px ;">
+            <div>CODING SCHOOL</div>
+            <div><i class="fa-solid fa-arrow-left pr-2 text-success"></i> 59 minutes ago</div>
+          </div>
+        </div>
+          <div >
+            <div><i class="fa-solid fa-phone text-success" style="font-size: 20px;margin-left: 100px; margin-top: 10px;"></i></div>
+          </div>
+        </div>
+      <br>
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+          <div style="margin-left: 10px ;">
+            <div>CODING SCHOOL</div>
+            <div><i class="fa-solid fa-arrow-left pr-2 text-success"></i> 59 minutes ago</div>
+          </div>
+        </div>
+          <div >
+            <div><i class="fa-solid fa-phone text-success" style="font-size: 20px;margin-left: 100px; margin-top: 10px;"></i></div>
+          </div>
+        </div>
+      <br>
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+          <div style="margin-left: 10px ;">
+            <div>CODING SCHOOL</div>
+            <div><i class="fa-solid fa-arrow-left pr-2 text-success"></i> 59 minutes ago</div>
+          </div>
+        </div>
+          <div >
+            <div><i class="fa-solid fa-phone text-success" style="font-size: 20px;margin-left: 100px; margin-top: 10px;"></i></div>
+          </div>
+        </div>
+      <br>
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+          <div style="margin-left: 10px ;">
+            <div>CODING SCHOOL</div>
+            <div><i class="fa-solid fa-arrow-left pr-2 text-success"></i> 59 minutes ago</div>
+          </div>
+        </div>
+          <div >
+            <div><i class="fa-solid fa-phone text-success" style="font-size: 20px;margin-left: 100px; margin-top: 10px;"></i></div>
+          </div>
+        </div>
+      <br>
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+          <div style="margin-left: 10px ;">
+            <div>CODING SCHOOL</div>
+            <div><i class="fa-solid fa-arrow-left pr-2 text-success"></i> 59 minutes ago</div>
+          </div>
+        </div>
+          <div >
+            <div><i class="fa-solid fa-phone text-success" style="font-size: 20px;margin-left: 100px; margin-top: 10px;"></i></div>
+          </div>
+        </div>
+      <br>
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+          <div style="margin-left: 10px ;">
+            <div>CODING SCHOOL</div>
+            <div><i class="fa-solid fa-arrow-left pr-2 text-success"></i> 59 minutes ago</div>
+          </div>
+        </div>
+          <div >
+            <div><i class="fa-solid fa-phone text-success" style="font-size: 20px;margin-left: 100px; margin-top: 10px;"></i></div>
+          </div>
+        </div>
+      <br>
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+          <div style="margin-left: 10px ;">
+            <div>CODING SCHOOL</div>
+            <div><i class="fa-solid fa-arrow-left pr-2 text-success"></i> 59 minutes ago</div>
+          </div>
+        </div>
+          <div >
+            <div><i class="fa-solid fa-phone text-success" style="font-size: 20px;margin-left: 100px; margin-top: 10px;"></i></div>
+          </div>
+        </div>
+      <br>
+      <div class="d-flex justify-content-between">
+        <div class="d-flex">
+          <img src="./Image/360_F_64676383_LdbmhiNM6Ypzb3FM4PPuFP9rHe7ri8Ju.jpg" class="rounded-circle" alt="" width="50px" height="50px">
+          <div style="margin-left: 10px ;">
+            <div>CODING SCHOOL</div>
+            <div><i class="fa-solid fa-arrow-left pr-2 text-success"></i> 59 minutes ago</div>
+          </div>
+        </div>
+          <div >
+            <div><i class="fa-solid fa-phone text-success" style="font-size: 20px;margin-left: 100px; margin-top: 10px;"></i></div>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+</body>
+<style>
+
+</style>
+</html>
